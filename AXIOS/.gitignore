@@ -1,0 +1,3 @@
+# dependencies and env files
+/node_modules
+.env
