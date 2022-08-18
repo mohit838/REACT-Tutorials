@@ -6,9 +6,12 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
-      setData(res.data);
-    });
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch(() => {});
   }, []);
 
   return (
@@ -19,8 +22,8 @@ function App() {
 
           return (
             <div key={id} className="cardDesign">
-              <h2>{title}</h2>
-              <p>{body}</p>
+              <h2>{title.slice(0, 15).toUpperCase()}</h2>
+              <p>{body.slice(0, 100)}</p>
             </div>
           );
         })}
