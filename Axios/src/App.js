@@ -11,7 +11,7 @@ function App() {
       .then((res) => {
         setData(res.data);
       })
-      .catch(() => {});
+      .catch((error) => {});
   }, []);
 
   return (
