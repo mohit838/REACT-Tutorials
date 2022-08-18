@@ -1,0 +1,32 @@
+// import axios from "axios";
+
+// const BASE_URL = "https://jsonplaceholder.typicode.com";
+
+// NOTE: AXIOS
+// useEffect(() => {
+//   axios
+//     .get("https://jsonplaceholder.typicode.com/posts")
+//     .then((res) => {
+//       setData(res.data);
+//     })
+//     .catch((error) => {
+//       setIsError(error.message);
+//     });
+// }, []);
+
+// NOTE: Using Async and Await
+
+// const getApiData = async (url) => {
+//   try {
+//     const res = await axios.get(url);
+//     setData(res.data);
+//   } catch (error) {
+//     setIsError(error.message);
+//   }
+// };
+
+// useEffect(() => {
+//   getApiData(`${BASE_URL}/posts`);
+// }, []);
+
+// NOTE: Most Uses Formula
