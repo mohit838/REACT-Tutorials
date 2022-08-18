@@ -1,2 +1,4 @@
 # REACT-Tutorials
- All kinds of stuffs included here
+
+1.  AXIOS
+2.  REDUX
